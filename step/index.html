@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<h1></h1>
+<p></p>
+<script type="text/javascript"src="https://studio-dg.GitHub.io/jquery.min.js"></script>
+<script>
+firebase.auth().onAuthStateChanged((user) => {
+  if (!user) {
+    // サインインしていない状態
+    // サインイン画面に遷移する等
+    location.href = '/step/login';
+  } else {
+    // サインイン済み
+  }
+});
+//==========ブラウザバック==========
+$(function(){
+ history.pushState(null, null, null); //ブラウザバック無効化
+ //ブラウザバックボタン押下時
+ $(window).on("popstate", function (event) {
+   history.pushState(null, null, null);
+   window.alert('前のページに戻る場合、前に戻るボタンから戻ってください。');
+ });
+});
+</script>
+</body>
+</html>
