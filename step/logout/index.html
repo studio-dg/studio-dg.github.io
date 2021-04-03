@@ -9,9 +9,16 @@
 <p></p>
 <script type="text/javascript"src="https://studio-dg.GitHub.io/jquery.min.js"></script>
 <script>
-firebase.auth().signOut().then(()=>{
-          console.log("ログアウトしました");
-        })
+function signOut() {
+  // [START auth_sign_out]
+  firebase.auth().signOut().then(() => {
+    // Sign-out successful.
+ console.log("ログアウトしました");
+ }).catch((error) => {
+    // An error happened.
+  });
+  // [END auth_sign_out]
+}
 //==========ブラウザバック==========
 $(function(){
  history.pushState(null, null, null); //ブラウザバック無効化
