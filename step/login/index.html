@@ -70,7 +70,7 @@
     //----------------------------------------------
     document.querySelector('#logout').addEventListener("click", ()=>{
       firebase.auth().signOut().then(()=>{
-          showLogout("Firebase Auth Sample", "");
+          showLogout("@stepにサインイン", "");
         })
         .catch( (error)=>{
           alert(`ログアウトできませんでした(${error})`);
