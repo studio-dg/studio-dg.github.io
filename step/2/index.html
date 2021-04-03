@@ -22,14 +22,14 @@
   <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/ui/3.5.2/firebase-ui-auth__ja.js"></script>
-  <script src="/login/js/config.js"></script>
+  <script src="/step/st/firebase/config.js"></script>
   <script>
     //----------------------------------------------
     // Firebase UIの設定
     //----------------------------------------------
     var uiConfig = {
         // ログイン完了時のリダイレクト先
-        signInSuccessUrl: 'https://localhost/',
+        signInSuccessUrl: '/step',
 
         // 利用する認証機能
         signInOptions: [
@@ -43,9 +43,9 @@
         ],
 
         // 利用規約のURL(任意で設定)
-        tosUrl: 'https:///',
+        tosUrl: '/step/kiyaku',
         // プライバシーポリシーのURL(任意で設定)
-        privacyPolicyUrl: 'https:///'
+        privacyPolicyUrl: '/step/privacypolicy'
     };
 
     //----------------------------------------------
