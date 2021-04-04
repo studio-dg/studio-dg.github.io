@@ -57,6 +57,11 @@
       if(user) {
         showLogin('Login Complete!', `${user.displayName}さんがログインしました<br>(${user.uid})`);
         console.log(user);
+setTimeout(“link()”, 0);
+function link(){
+location.href=’/step’;
+}
+
       }
       // 未ログイン
       else {
