@@ -1,16 +1,16 @@
 /** smart.js ver 1.00  
 **/
 function NewScript(URL) {
-var app_script = document.createElement('script');
-app_script.src = URL;
-document.body.appendChild(app_script);
+var new_script = document.createElement('script');
+new_script.src = URL;
+document.body.appendChild(new_script);
 };
 function NewCss(URL) {
-var app_css = document.createElement('link');
-app_css.href = URL;
-app_css.rel = 'stylesheet';
-app_css.type = 'text/css';
-document.getElementsByTagName('head')[0].appendChild(app_css);
+var new_css = document.createElement('link');
+new_css.href = URL;
+new_css.rel = 'stylesheet';
+new_css.type = 'text/css';
+document.getElementsByTagName('head')[0].appendChild(new_css);
 };
 function getParam(name, url) {
     if (!url) url = window.location.href;
